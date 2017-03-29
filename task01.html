@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>javascript和树（一）</title>
+		<style>
+			html,body {
+			margin: 0;
+			padding: 0;
+			}
+			#root {
+				width: 1188px;
+				margin: 30px auto;
+				color: #333;
+			}
+			#root span {
+				position: absolute;
+				bottom: 0;
+				right: 5px;
+				line-height: 30px;
+				font-size: 12px;
+			}
+			#root b {
+				position: absolute;
+				top: 5px;
+				left: 50%;
+				margin-left: -6px;
+			}
+			div {
+				min-width: 40px;
+				min-height: 40px;
+				position: relative;
+				display: flex;
+				padding: 0 30px 30px 0;
+				border: 1px solid #ccc;
+				margin: 30px 0 0 30px; 
+				background-color: #fff;
+				text-align: center;
+			}
+			.ergodicState {
+				background-color: #00a1d6;
+				color: #fff !important;
+			}
+			.ergodicState div {
+				color: #333 !important;
+			}
+			.unergodicState {
+				background-color: #aaa;
+				color: #fff !important;
+				cursor: auto;
+			}
+			#but {
+				display: block;
+				text-align: center;
+				margin: 0;
+				border: none;
+			}
+			button {
+				height: 32px;
+				width: 80px;
+				margin-left: 30px;
+				cursor: pointer;
+				border: 1px solid #ccc;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<span>root</span>
+			<b>A</b>
+			<div>
+				<span>leftChild</span>
+				<b>B</b>
+				<div>
+					<span>leftChild</span>
+					<b>D</b>
+					<div>
+						<span>leftChild</span>
+						<b>H</b>
+					</div>
+					<div>
+						<span>rightChild</span>
+						<b>I</b>
+					</div>
+			    </div>
+			    <div>
+					<span>rightChild</span>
+					<b>E</b>
+					<div>
+						<span>leftChild</span>
+						<b>J</b>
+					</div>
+					<div>
+						<span>rightChild</span>
+						<b>K</b>
+					</div>
+			    </div>
+			</div>
+			<div>
+				<span>rightChild</span>
+				<b>C</b>
+				<div>
+					<span>leftChild</span>
+					<b>F</b>
+					<div>
+						<span>leftChild</span>
+						<b>L</b>
+					</div>
+					<div>
+						<span>rightChild</span>
+						<b>M</b>
+					</div>
+			    </div>
+			    <div>
+					<span>rightChild</span>
+					<b>G</b>
+					<div>
+						<span>leftChild</span>
+						<b>N</b>
+					</div>
+					<div>
+						<span>rightChild</span>
+						<b>O</b>
+					</div>
+			    </div>
+			</div>
+		</div>
+		<div id="but">
+			<button id="dlr">先序遍历</button>
+			<button id="ldr">中序遍历</button>
+			<button id="lrd">后序遍历</button>
+		</div>
+		
+		<script src="js/task01.js"></script>
+	</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/task02.css" />
+	</head>
+	<body>
+	<section>
+		<button id="preOrder" type="button">先序遍历</button>
+		<button id="inOrder" type="button">中序遍历</button>
+		<button id="postOrder" type="button">后序遍历</button>
+	</section>
+
+	<p id="result">遍历次序：</p>
+
+	<div id="rootNode">
+		<b>A</b>
+		<span>root</span>
+		<div class="first" id="firstLeft">
+			<b>B</b>
+			<span>leftChild</span>
+			<div class="second" >
+				<b>D</b>
+				<span>leftChild</span>
+				<div class="third">
+					<b>F</b>
+					<span>leftChild</span>
+					<div class="fourth">
+						<b>P</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>Q</b>
+				    <span>rightChild</span>
+					</div>
+				</div>
+				<div class="third">
+				<b>G</b>
+				<span>rightChild</span>
+					<div class="fourth">
+						<b>R</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>S</b>
+						<span>rightChild</span>
+					</div>
+				</div>
+			</div>
+			<div class="second">
+				<b>E</b>
+				<span>rightChild</span>
+				<div class="third">
+				<b>H</b>
+				<span>leftChild</span>
+					<div class="fourth">
+						<b>V</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>W</b>
+						<span>rightChild</span>
+					</div>
+				</div>
+				<div class="third">
+				<b>I</b>
+				<span>rightChild</span>
+					<div class="fourth">
+						<b>X</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>Y</b>
+						<span>rightChild</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="first" id="firstRight">
+			<b>C</b>
+			<span>rightChild</span>
+			<div class="second" >
+				<b>J</b>
+				<span>leftChild</span>
+				<div class="third">
+					<b>L</b>
+					<span>leftChild</span>
+					<div class="fourth">
+						<b>Z</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>1</b>
+						<span>rightChild</span>
+					</div>
+				</div>
+				<div class="third">
+					<b>M</b>
+				  <span>rightChild</span>
+					<div class="fourth">
+						<b>2</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>3</b>
+						<span>rightChild</span>
+					</div>
+				</div>
+			</div>
+			<div class="second">
+				<b>K</b>
+				<span>rightChild</span>
+				<div class="third">
+					<b>N</b>
+				 <span>leftChild</span>
+					<div class="fourth">
+						<b>4</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>5</b>
+						<span>rightChild</span>
+					</div>
+				</div>
+				<div class="third">
+					<b>O</b>
+					<span>leftChild</span>
+					<div class="fourth">
+						<b>6</b>
+						<span>leftChild</span>
+					</div>
+					<div class="fourth">
+						<b>7</b>
+						<span>rightChild</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script src="js/task02.js"></script>
+	</body>
+</html>

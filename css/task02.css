@@ -1,0 +1,83 @@
+section {
+	width: 300px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+p#result {
+	margin-left: 350px;
+}
+
+button {
+	border-radius: 4px;
+	height: 30px;
+	width: 70px;
+	background-color: #5cb85c;
+	border-color: #5cb85c;
+	color: #fff;
+	margin-left: 20px;
+}
+
+div {
+	border: 1px solid #000;
+	position: relative;
+	background-color: #fff;
+}
+
+div#rootNode {
+	width: 800px;
+	height: 580px;
+	margin: 0 auto;
+}
+
+div.first {
+	width: 700px;
+	height: 250px;
+	margin: 25px auto 10px;
+}
+
+div.second {
+	width: 310px;
+	height: 200px;
+	float: left;
+	margin: 20px 0 0 30px;
+}
+
+div.third {
+	width: 130px;
+	height: 110px;
+	float: left;
+	margin: 50px 0 0 15px;
+}
+
+div.fourth {
+	width: 55px;
+	height: 60px;
+	float: left;
+	margin: 25px 0 0 5px;
+}
+
+b {
+	position: absolute;
+	left: 50%;
+	top: 3px;
+}
+
+span {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 12px;
+}
+
+div.ergodicState {
+	background-color: #5cb85c;
+	border-color: #5cb85c; 
+}
+
+.unergodicState {
+	background-color: #aaa;
+	border-color: #aaa;
+	color: #fff !important;
+	cursor: auto;
+	}
